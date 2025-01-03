@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { manrope } from "../utils";
-import Siderbar from "../components/layouts/Siderbar";
 import { ClerkProvider } from "@clerk/nextjs";
 
 
