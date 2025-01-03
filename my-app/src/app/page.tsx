@@ -8,6 +8,7 @@ export default function Home() {
       animi quisquam modi architecto accusamus magni necessitatibus inventore
       laudantium vitae iure dicta!
       <h1 className={roboto.className}>Heading</h1>
+      <h2 className="font-secondary font-medium">Heding h2</h2>
     </main>
   );
 }

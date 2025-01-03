@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { manrope, roboto } from "./components/fonts";
+import { fonts_dm, manrope, roboto } from "./components/fonts";
 import "./globals.css";
 
 
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.className} ${roboto.className}`}>{children}</body>
+      <body className={fonts_dm.className}>{children}</body>
     </html>
   );
 }
