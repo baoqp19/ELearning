@@ -21,7 +21,6 @@ export default function RootLayout({
         <div className="wrapper grid grid-cols-[300px,minmax(0,1fr)] h-screen">
           <Siderbar />
 
-
           <main>{children}</main>
         </div>
       </body>
