@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { fonts_dm, manrope, roboto } from "./components/fonts";
+
 import "./globals.css";
+import { manrope } from "./utils";
+import Siderbar from "./components/layouts/Siderbar";
 
 
 export const metadata: Metadata = {
@@ -15,7 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fonts_dm.className}>{children}</body>
+      <body className={manrope.className}>
+        <div className="wrapper grid grid-cols-[300px,minmax(0,1fr)] h-screen">
+          <Siderbar />
+
+
+          <main>{children}</main>
+        </div>
+      </body>
     </html>
   );
 }

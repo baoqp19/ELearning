@@ -1,4 +1,3 @@
-import { roboto } from "./components/fonts";
 
 export default function Home() {
   return (
@@ -7,8 +6,6 @@ export default function Home() {
       delectus nesciunt aliquid quis excepturi praesentium iste quos maiores
       animi quisquam modi architecto accusamus magni necessitatibus inventore
       laudantium vitae iure dicta!
-      <h1 className={roboto.className}>Heading</h1>
-      <h2 className="font-secondary font-medium">Heding h2</h2>
     </main>
   );
 }
