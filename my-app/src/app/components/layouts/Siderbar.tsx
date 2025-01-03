@@ -1,6 +1,7 @@
 import { menuItems } from '@/app/constants'
 import Link from 'next/link'
 import React from 'react'
+import ActiveLink from '../common/ActiveLink'
 
 const Siderbar = () => {
   return (
@@ -27,11 +28,10 @@ const Siderbar = () => {
 function MenuItem({ url = "/", title = "", icon }: { url: string, title: string, icon?: React.ReactNode }) {
   return (
     <li>
-      <Link href={url} className="p-3 rounded-md flex items-center gap-3 hover:text-primary hover:bg-primary hover:bg-opacity-10 transition-all">
+      <ActiveLink url={url}>
         {icon}
         {title}
-
-      </Link>
+      </ActiveLink>
     </li>
   )
 }
