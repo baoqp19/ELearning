@@ -1,4 +1,5 @@
 import { menuItems } from '@/app/constants'
+import Link from 'next/link'
 import React from 'react'
 
 const Siderbar = () => {
@@ -26,11 +27,11 @@ const Siderbar = () => {
 function MenuItem({ url = "/", title = "", icon }: { url: string, title: string, icon?: React.ReactNode }) {
   return (
     <li>
-      <a href={url} className="p-3 rounded-md flex items-center gap-3 hover:text-primary hover:bg-primary hover:bg-opacity-10 transition-all">
+      <Link href={url} className="p-3 rounded-md flex items-center gap-3 hover:text-primary hover:bg-primary hover:bg-opacity-10 transition-all">
         {icon}
         {title}
 
-      </a>
+      </Link>
     </li>
   )
 }

@@ -19,3 +19,22 @@
 - subsets: kiểu chữ, thông thường là latin
 - variable: tên biến để sử dụng trong CSS, ví dụ: variable: "--font-manrope"
 - Sử dụng trong css: body{font-family: var(--font-manrope)}
+
+# Next/Link
+
+- Link
+- href: đường dẫn, có thể truyền vào là chuỗi hoặc object
+
+```js
+<Link
+href={{
+  pathname: url,
+  query: { slug: "bai-1-tong-quan-ve-khoa-hoc" },
+}}
+></Link>
+>
+```
+
+- replace: thay thế đường dẫn và không lưu lại trong lịch sử
+- scroll: mặc dịnh là `true` nghĩa là khi nhấn vào link thì sẽ scroll lên trên cùng, nếu không muốn scroll thì thiết lập `scroll={false}`
+- prefetch:
