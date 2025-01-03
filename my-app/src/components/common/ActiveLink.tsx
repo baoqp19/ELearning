@@ -1,6 +1,6 @@
 "use client"
 
-import { IActiveLinkProps } from '@/app/types'
+import { IActiveLinkProps } from '@/types'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'

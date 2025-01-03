@@ -1,5 +1,5 @@
 import { IconExplore, IconPlay } from "../components/icons"
-import { IMenuItem } from "../app/types"
+import { IMenuItem } from "../types"
 
 
 export const menuItems: IMenuItem[] = [
