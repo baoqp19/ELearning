@@ -1,4 +1,4 @@
-import { menuItems } from '@/app/constants'
+import { menuItems } from '@/constants'
 import Link from 'next/link'
 import React from 'react'
 import ActiveLink from '../common/ActiveLink'

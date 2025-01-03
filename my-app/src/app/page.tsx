@@ -1,11 +1,13 @@
 
-export default function Home() {
+import { connectToDatabase } from "@/lib/mongodb";
+
+export default async function Home() {
+  const connect = connectToDatabase();
+  console.log(connect);
+
   return (
     <main>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-      delectus nesciunt aliquid quis excepturi praesentium iste quos maiores
-      animi quisquam modi architecto accusamus magni necessitatibus inventore
-      laudantium vitae iure dicta!
+      HomePage
     </main>
   );
 }

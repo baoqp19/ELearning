@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { manrope } from "./utils";
-import Siderbar from "./components/layouts/Siderbar";
+import Siderbar from "../components/layouts/Siderbar";
 
 
 export const metadata: Metadata = {
